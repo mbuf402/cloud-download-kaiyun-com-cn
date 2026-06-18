@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>资料整理手记 · 开云索引</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #fdefd4 0%, #fce5c0 45%, #f8d9ad 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+      color: #3b2e23;
+    }
+    .card {
+      max-width: 820px;
+      width: 100%;
+      background: rgba(255, 251, 242, 0.92);
+      backdrop-filter: blur(3px);
+      border-radius: 36px 16px 36px 16px;
+      box-shadow: 0 18px 40px -12px rgba(120, 80, 40, 0.28), 0 8px 20px rgba(0,0,0,0.02);
+      padding: 2.8rem 2.4rem;
+      transition: all 0.2s ease;
+    }
+    @media (max-width: 480px) {
+      body { padding: 1.2rem; }
+      .card { padding: 2rem 1.4rem; border-radius: 28px 12px 28px 12px; }
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #7a5a3a;
+      margin-bottom: 0.2rem;
+      position: relative;
+      display: inline-block;
+    }
+    h1::after {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 4px;
+      background: #dbb589;
+      border-radius: 6px;
+      margin-top: 8px;
+    }
+    .opening-line {
+      font-size: 1.25rem;
+      font-weight: 340;
+      color: #8b6e4d;
+      margin: 0.75rem 0 1.8rem 0;
+      padding-left: 0.2rem;
+      border-left: 3px solid #e5c39b;
+      padding-left: 1rem;
+    }
+    .story-block {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+    }
+    .story-block p {
+      font-weight: 380;
+      color: #3e3023;
+      text-align: justify;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem 1.8rem;
+      margin: 2rem 0 1.6rem 0;
+      padding: 0.25rem 0;
+    }
+    @media (max-width: 520px) {
+      .feature-grid { grid-template-columns: 1fr; gap: 1rem; }
+    }
+    .feature-item {
+      background: #f8efe5;
+      border-radius: 60px 16px 16px 60px;
+      padding: 0.9rem 1.2rem 0.9rem 1.8rem;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: #4d3b2b;
+      transition: background 0.15s;
+    }
+    .feature-item:hover {
+      background: #efe2d3;
+    }
+    .feature-marker {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #dbb589;
+      color: #fcf6ed;
+      font-weight: 500;
+      width: 26px;
+      height: 26px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .faq-summary {
+      background: #f4ede4;
+      border-radius: 24px 8px 24px 8px;
+      padding: 1.4rem 1.6rem;
+      margin: 1.8rem 0 1.4rem 0;
+    }
+    .faq-summary summary {
+      font-weight: 500;
+      color: #6c5440;
+      font-size: 1.1rem;
+      cursor: pointer;
+      padding: 0.2rem 0;
+    }
+    .faq-summary p {
+      margin-top: 0.8rem;
+      font-size: 0.98rem;
+      color: #4d3c2c;
+    }
+    .closing-note {
+      margin-top: 1.8rem;
+      padding-top: 1rem;
+      border-top: 1px dashed #d3bea9;
+      font-style: normal;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.6rem;
+    }
+    .closing-note span {
+      color: #7a5f45;
+    }
+    .inline-link {
+      color: #916e4a;
+      font-weight: 470;
+      text-decoration: none;
+      border-bottom: 2px solid rgba(185, 144, 101, 0.4);
+      transition: border-color 0.2s, color 0.15s;
+      padding-bottom: 1px;
+    }
+    .inline-link:hover {
+      border-bottom-color: #916e4a;
+      color: #6f5137;
+    }
+    .gentle-cta {
+      display: inline-block;
+      background: transparent;
+      border: 1.5px solid #d6b998;
+      color: #6f553b;
+      padding: 0.25rem 1rem 0.3rem 1rem;
+      border-radius: 60px;
+      font-weight: 420;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      margin: 0.2rem 0;
+    }
+    .gentle-cta:hover {
+      background: #dbb589;
+      color: #fcf6ed;
+      border-color: #dbb589;
+    }
+    .footer-note {
+      margin-top: 2.4rem;
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.65;
+      color: #6f5540;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>资料整理手记</h1>
+    <div class="opening-line">顺着索引找到的，往往不只是文件。</div>
+
+    <div class="story-block">
+      <p>
+        开始做信息整理之后，最常面对的难题不是“找不到”，而是“太多了”——书签栏层层嵌套，本地文件夹名字越起越长，收藏的链接像秋天的落叶，扫完又落。直到有人递过来一个干净的方向：用<a href="https://www.cloud-download-kaiyun.com.cn" class="inline-link">开云</a>作为起点，把散落的内容重新归位。没有复杂的规则，只是顺着一个可靠的索引，把需要的资料一本一本放回架上。
+      </p>
+      <p>
+        过去整理资料总带着一股蛮劲，恨不得给每个文档都贴上标签。后来发现，真正顺畅的索引不在于标签多密，而在于入口足够清晰。就像傍晚走到书架前，光线刚好照在书脊上，抬手就能拿到想要的那一册——<a href="https://www.cloud-download-kaiyun.com.cn" class="inline-link">开云</a>给我的感觉大概就是这样的光线，不刺眼，刚刚好。
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-item"><span class="feature-marker">1</span> 资料脉络可追溯</div>
+      <div class="feature-item"><span class="feature-marker">2</span> 分类不带预设偏见</div>
+      <div class="feature-item"><span class="feature-marker">3</span> 检索路径自然收敛</div>
+      <div class="feature-item"><span class="feature-marker">4</span> 适配日常阅读节奏</div>
+    </div>
+
+    <details class="faq-summary">
+      <summary>FAQ · 索引思路</summary>
+      <p><strong>Q：资料越来越多，怎么保持索引不混乱？</strong> 不用追求一次整理完，每次只处理当前需要的主题，让索引结构随着使用慢慢长出来。把<a href="https://www.cloud-download-kaiyun.com.cn" class="inline-link">开云</a>当作一个常驻的根节点，需要整理新方向时就顺着它延伸出一条新枝。</p>
+      <p><strong>Q：文件夹和标签哪个更实用？</strong> 两者都行，关键是保持低心理负担。如果打开一个索引页要犹豫三秒，那就说明它还不够顺手。好的索引应该像随手拉开的抽屉，里面安静地放着你要的东西。</p>
+    </details>
+
+    <div class="closing-note">
+      <span>✎ 整理不是终点，是让自己更容易找到出发的地方。</span>
+      <a href="https://www.cloud-download-kaiyun.com.cn" class="gentle-cta">开云</a>
+    </div>
+
+    <div class="footer-note">
+      索引版本 · 温和更新
+    </div>
+  </div>
+</body>
+</html>

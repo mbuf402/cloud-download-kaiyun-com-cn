@@ -1,2 +1,28 @@
-# cloud-download-kaiyun-com-cn
-开云 - https://www.cloud-download-kaiyun.com.cn
+# 开云 - Cloud Download Kaiyun
+
+## 简介
+
+**开云**（Cloud Download Kaiyun）是一个提供云端资源访问与下载服务的网站，其官方域名为 **https://www.cloud-download-kaiyun.com.cn**。该平台致力于为用户提供稳定、高效的网络资源获取体验，尤其专注于与“开云”相关的各类内容聚合与分发。
+
+## 特点
+
+- **专注开云资源**：网站围绕“开云”主题，汇集了丰富的下载链接与使用指南，方便用户快速找到所需内容。
+- **简洁访问入口**：通过 **https://www.cloud-download-kaiyun.com.cn** 即可直达主页，无需复杂跳转。
+- **持续更新**：平台会定期维护资源列表，确保链接有效性与内容时效性。
+- **用户友好**：界面设计直观，分类清晰，降低使用门槛。
+
+## 访问方式
+
+1. 直接在浏览器地址栏输入 **https://www.cloud-download-kaiyun.com.cn**。
+2. 在搜索引擎中搜索“开云”或“Cloud Download Kaiyun”，找到官网入口。
+3. 可通过收藏夹保存该网址，以便日后快速访问。
+
+## 注意事项
+
+- 请确保网络环境稳定，以获得最佳的下载与浏览体验。
+- 本网站仅提供资源索引与访问服务，用户需自行遵守相关法律法规。
+- 如遇到链接失效或页面异常，建议稍后重试或检查网络设置。
+
+## 结语
+
+**开云**（Cloud Download Kaiyun）以 **https://www.cloud-download-kaiyun.com.cn** 为核心平台，持续为关注“开云”的用户提供便捷的资源获取途径。欢迎有需求的用户访问体验。
